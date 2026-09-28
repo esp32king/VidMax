@@ -1,0 +1,83 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.myapplication'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.godxshadow.reaper"
+        minSdk 24
+        targetSdk 34
+        versionCode 66
+        versionName "6.6"
+        resourceConfigurations += ["en"]
+
+        // yt-dlp / ffmpeg ship native binaries per-ABI. Keep arm64 only so the
+        // APK stays small enough to snapshot. Add armeabi-v7a for older phones.
+        ndk {
+            abiFilters 'arm64-v8a'
+        }
+    }
+
+    signingConfigs {
+        neon {
+            storeFile file("neon-release.jks")
+            storePassword "neoncaller"
+            keyAlias "neon"
+            keyPassword "neoncaller"
+            enableV1Signing true
+            enableV2Signing true
+            enableV3Signing true
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            jniDebuggable false
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled true
+            signingConfig signingConfigs.neon
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    packagingOptions {
+        // yt-dlp extracts its python payload at runtime -> libs must not be compressed away
+        jniLibs {
+            useLegacyPackaging = true
+            pickFirsts += ['**/libc++_shared.so']
+        }
+        resources {
+            excludes += ['META-INF/*', 'DebugProbesKt.bin']
+            pickFirsts += ['**/*.so']
+        }
+    }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.core:core:1.13.1'
+    implementation 'androidx.activity:activity:1.9.3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.12.0'
+
+    // ---- Real video extraction / download engine (yt-dlp + ffmpeg) ----
+    // YouTube (up to 4K), Instagram, Facebook, Snapchat, and 1000+ sites.
+    implementation 'io.github.junkfood02.youtubedl-android:library:0.17.4'
+    implementation 'io.github.junkfood02.youtubedl-android:ffmpeg:0.17.4'
+}
