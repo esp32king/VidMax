@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bubbleRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <!-- control panel (hidden until the bubble is tapped) -->
+    <LinearLayout
+        android:id="@+id/bubbleControls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/btnOpenApp"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_bubble"
+            android:contentDescription="@string/open_app"
+            android:padding="10dp"
+            android:src="@drawable/ic_open"
+            app:tint="@color/neon_cyan" />
+
+        <ImageView
+            android:id="@+id/btnPauseResume"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_bubble"
+            android:contentDescription="@string/pause"
+            android:padding="10dp"
+            android:src="@drawable/ic_pause"
+            app:tint="@color/neon_lime" />
+
+        <ImageView
+            android:id="@+id/btnCancel"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_bubble"
+            android:contentDescription="@string/cancel"
+            android:padding="11dp"
+            android:src="@drawable/ic_close"
+            app:tint="@color/neon_red" />
+    </LinearLayout>
+
+    <!-- the circular progress bubble -->
+    <FrameLayout
+        android:id="@+id/bubbleCircleWrap"
+        android:layout_width="74dp"
+        android:layout_height="74dp">
+
+        <com.example.myapplication.ui.CircleProgressView
+            android:id="@+id/bubbleCircle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/bubbleSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="9dp"
+            android:background="#66000000"
+            android:paddingStart="5dp"
+            android:paddingTop="1dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="1dp"
+            android:text=""
+            android:textColor="@color/neon_cyan"
+            android:textSize="8sp" />
+    </FrameLayout>
+</LinearLayout>

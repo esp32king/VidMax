@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base -->
+    <color name="bg_deep">#FF04060F</color>
+    <color name="bg_mid">#FF080D1C</color>
+    <color name="bg_top">#FF0B1226</color>
+    <color name="surface">#FF0D1428</color>
+    <color name="surface_2">#FF111A33</color>
+    <color name="surface_glass">#E60C1428</color>
+    <color name="stroke_soft">#26FFFFFF</color>
+    <color name="stroke_faint">#14FFFFFF</color>
+
+    <!-- Neon -->
+    <color name="neon_cyan">#FF00E5FF</color>
+    <color name="neon_cyan_soft">#FF6FF6FF</color>
+    <color name="neon_blue">#FF2F6BFF</color>
+    <color name="neon_magenta">#FFFF2FD6</color>
+    <color name="neon_violet">#FF8B5CFF</color>
+    <color name="neon_lime">#FF3DFFA2</color>
+    <color name="neon_amber">#FFFFC24A</color>
+    <color name="neon_red">#FFFF4D6D</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFF2F6FF</color>
+    <color name="text_secondary">#FFA9B6D4</color>
+    <color name="text_muted">#FF6E7C9C</color>
+
+    <!-- Utility -->
+    <color name="scrim">#B304060F</color>
+    <color name="transparent">#00000000</color>
+    <color name="icon_bg_start">#FF0A1024</color>
+    <color name="icon_bg_end">#FF12062B</color>
+
+    <!-- Horror / about -->
+    <color name="blood">#FFE00610</color>
+    <color name="blood_soft">#FF8A0008</color>
+    <color name="blood_deep">#FF3A0004</color>
+</resources>

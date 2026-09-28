@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pad_screen">18dp</dimen>
+    <dimen name="card_radius">24dp</dimen>
+    <dimen name="chip_radius">999dp</dimen>
+</resources>

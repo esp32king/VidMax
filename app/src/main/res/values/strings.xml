@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GodxShadow</string>
+    <string name="launcher_name">Reaper Downloader</string>
+    <string name="home_title">Reaper</string>
+    <string name="home_subtitle">download anything · fear nothing</string>
+    <string name="app_tagline">Any video · up to 4K</string>
+
+    <!-- footer + about -->
+    <string name="footer_credit">© 2026 GODXSHADOW — created by krishna chauhan UPX61</string>
+    <string name="about">About</string>
+    <string name="about_name">Reaper</string>
+    <string name="about_by">created by Krishna Chauhan from Ghazipur</string>
+    <string name="about_tag_full">A devilish mind doesn\u2019t fear the darkness—it knows how to rule it.</string>
+
+    <!-- splash -->
+    <string name="about_created_by">Created by</string>
+    <string name="about_creator">GodxShadow</string>
+    <string name="splash_tagline">Scenic v/s Sinner</string>
+
+    <!-- main screen -->
+    <string name="downloads">Downloads</string>
+    <string name="tab_active">Downloading</string>
+    <string name="tab_done">Completed</string>
+    <string name="paste_link">Paste a video link</string>
+    <string name="paste_hint">Paste YouTube / Instagram / Facebook / X / Snapchat link…</string>
+    <string name="fetch">Get</string>
+    <string name="empty_downloads">No downloads yet</string>
+    <string name="empty_downloads_sub">Share a video from YouTube, Instagram, Facebook, X (Twitter), Snapchat, TikTok and 1000+ sites — a floating popup will let you pick the quality.</string>
+    <string name="grant_overlay">Enable floating popup</string>
+    <string name="grant_overlay_sub">Allow \u201CDisplay over other apps\u201D so the download popup can appear on any screen.</string>
+    <string name="enable">Enable</string>
+
+    <!-- overlay -->
+    <string name="choose_quality">Choose quality</string>
+    <string name="fetching_formats">Reading video…</string>
+    <string name="close">Close</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="open_app">Open</string>
+    <string name="cancel">Cancel</string>
+    <string name="q_audio">Audio (MP3)</string>
+
+    <!-- states -->
+    <string name="state_queued">Queued</string>
+    <string name="state_running">Downloading</string>
+    <string name="state_paused">Paused</string>
+    <string name="state_done">Completed</string>
+    <string name="state_error">Failed — tap to retry</string>
+    <string name="state_preparing">Preparing…</string>
+
+    <!-- misc -->
+    <string name="open">Open</string>
+    <string name="back">Back</string>
+    <string name="retry">Retry</string>
+    <string name="delete">Delete</string>
+    <string name="engine_starting">Starting engine (first run downloads a small core)…</string>
+</resources>

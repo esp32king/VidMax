@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="neonStartColor" format="color" />
+    <attr name="neonEndColor" format="color" />
+    <attr name="neonTextGlowRadius" format="dimension" />
+    <attr name="neonShimmer" format="boolean" />
+
+    <attr name="neonCardBorderWidth" format="dimension" />
+    <attr name="neonCardRadius" format="dimension" />
+    <attr name="neonCardStartColor" format="color" />
+    <attr name="neonCardEndColor" format="color" />
+    <attr name="neonCardFill" format="color" />
+
+    <attr name="neonGlowColorA" format="color" />
+    <attr name="neonGlowColorB" format="color" />
+    <attr name="neonGlowStroke" format="dimension" />
+    <attr name="neonGlowSpread" format="dimension" />
+    <attr name="neonGlowCorner" format="dimension" />
+    <attr name="neonGlowPulse" format="boolean" />
+
+    <declare-styleable name="NeonTextView">
+        <attr name="neonStartColor" />
+        <attr name="neonEndColor" />
+        <attr name="neonTextGlowRadius" />
+        <attr name="neonShimmer" />
+    </declare-styleable>
+
+    <declare-styleable name="NeonCard">
+        <attr name="neonCardBorderWidth" />
+        <attr name="neonCardRadius" />
+        <attr name="neonCardStartColor" />
+        <attr name="neonCardEndColor" />
+        <attr name="neonCardFill" />
+    </declare-styleable>
+
+    <declare-styleable name="NeonGlowCard">
+        <attr name="neonGlowColorA" />
+        <attr name="neonGlowColorB" />
+        <attr name="neonGlowStroke" />
+        <attr name="neonGlowSpread" />
+        <attr name="neonGlowCorner" />
+        <attr name="neonGlowPulse" />
+    </declare-styleable>
+</resources>
